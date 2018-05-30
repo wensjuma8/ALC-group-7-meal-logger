@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 
 const User = require("../models/User");
+const { jwtSecret } = require("../config/keys");
 
 // @route   GET '/register'
 // desc     Get register route
@@ -62,9 +64,26 @@ router.post("/", (req, res) => {
         .compare(password, user.password)
         .then(authenticated => {
           if (authenticated) {
-            return res.json({ success: "User has been authenticated" });
+            //Create user payload
+            const payload = {
+              id: user.id,
+              name: user.name
+            };
+            //Sign a token
+            jwt.sign(payload, jwtSecret, {}, (err, token) => {
+              if (err) {
+                console.log(err);
+              }
+              return res.json({
+                success: true,
+                token: `Bearer ${token}`
+              });
+            });
+          } else {
+            return res
+              .sendStatus(400)
+              .json({ error: "Invalid email/password combination" });
           }
-          return res.json({ error: "Invalid email/password combination" });
         })
         .catch(err => console.log(err));
     })
