@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title>Meal Logging App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mealloggingapp_misc.css">
+    <link rel="stylesheet" href="css/mealloggingapp_style.css">
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <div class="bg-overlay"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-4 col-sm-12">
+                <div class="sidebar-menu">
+
+                    <div class="logo-wrapper">
+                        <h1 class="logo">
+                            <a href="#"><img src="images/logo1.png" alt="Circle Template">
+                            <span>Meal Logging App</span></a>
+                        </h1>
+                    </div> <!-- /.logo-wrapper -->
+
+                    <div class="menu-wrapper">
+                        <ul class="menu">
+                            <li><a class="homebutton" href="#">Home</a></li>
+                            <li><a class="show-1" href="#">Login</a></li>
+                            <li><a class="show-2" href="#">Services</a></li>
+                            <li><a class="show-3" href="#">Gallery</a></li>
+                            <li><a class="show-4" href="#">Contact</a></li>
+                        </ul> <!-- /.menu -->
+                        <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                    </div> <!-- /.menu-wrapper -->
+
+                </div> <!-- /.sidebar-menu -->
+            </div> <!-- /.col-md-4 -->
+
+            <div class="col-md-8 col-sm-12">
+
+                <div id="menu-container">
+
+                    <div id="menu-1" class="about content">
+                        <div class="row">
+                            <ul class="tabs">
+                                <li class="col-md-4 col-sm-4">
+                                    <a href="#tab1" class="icon-item">
+                                        <i class="fa fa-umbrella"></i>
+                                    </a> <!-- /.icon-item -->
+                                </li>
+                                <li class="col-md-4 col-sm-4">
+                                    <a href="#tab2" class="icon-item">
+                                        <i class="fa fa-camera"></i>
+                                    </a> <!-- /.icon-item -->
+                                </li>
+                                <li class="col-md-4 col-sm-4">
+                                    <a href="#tab3" class="icon-item">
+                                        <i class="fa fa-coffee"></i>
+                                    </a> <!-- /.icon-item -->
+                                </li>
+                            </ul> <!-- /.tabs -->
+                            <div class="col-md-12 col-sm-12">
+                                <div class="toggle-content text-center" id="tab1">
+                                    <h3>Our History</h3>
+                                    <p>Nothing much to say here</p>
+                                </div>
+
+                                <div class="toggle-content text-center" id="tab2">
+                                    <h3>What We Do</h3>
+                                    <p>We help people in deciding which meal is best for them and for their health.</p>
+                                </div>
+
+                                <div class="toggle-content text-center" id="tab3">
+                                    <h3>Our Team</h3>
+                                    <p>Creative team. Cheers to our coach, Okocha.</p>
+                                </div>
+                            </div> <!-- /.col-md-12 -->
+                        </div> <!-- /.row -->
+
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="member-item">
+                                    <div class="thumb">
+                                        <img src="images/team/member-1.jpg" alt="Collins - Web Designer">
+                                    </div>
+                                    <h4>Collins</h4>
+                                    <span>Web Designer</span>
+                                </div> <!-- /.member-item -->
+                            </div> <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="member-item">
+                                    <div class="thumb">
+                                        <img src="images/team/member-2.jpg" alt="Temi - Mobile Developer">
+                                    </div>
+                                    <h4>Temi</h4>
+                                    <span>Mobile Developer</span>
+                                </div> <!-- /.member-item -->
+                            </div> <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-sm-4">
+                                <div class="member-item">
+                                    <div class="thumb">
+                                        <img src="images/team/member-3.jpg" alt="Melius - Full Stack Director">
+                                    </div>
+                                    <h4>Melius</h4>
+                                    <span>Full Stack Developer</span>
+                                </div> <!-- /.member-item -->
+                            </div> <!-- /.col-md-4 -->
+                        </div> <!-- /.row -->
+                    </div> <!-- /.about -->
+
+                    <div id="menu-2" class="services content">
+                        <div class="row">
+                            <ul class="tabs">
+                                <li class="col-md-4 col-sm-4">
+                                    <a href="#tab4" class="icon-item">
+                                        <i class="fa fa-cogs"></i>
+                                    </a> <!-- /.icon-item -->
+                                </li>
+                                <li class="col-md-4 col-sm-4">
+                                    <a href="#tab5" class="icon-item">
+                                        <i class="fa fa-leaf"></i>
+                                    </a> <!-- /.icon-item -->
+                                </li>
+                                <li class="col-md-4 col-sm-4">
+                                    <a href="#tab6" class="icon-item">
+                                        <i class="fa fa-users"></i>
+                                    </a> <!-- /.icon-item -->
+                                </li>
+                            </ul> <!-- /.tabs -->
+                            <div class="col-md-12 col-sm-12">
+                                <div class="toggle-content text-center" id="tab4">
+                                    <h3>Our Services</h3>
+                                    <p>Meal Logging App is a platform that helps people log the amount of calories they consume in every meal. We are here to help you live and maintain a healthy living.</p>
+                                </div>
+
+                                <div class="toggle-content text-center" id="tab5">
+                                    <h3>Our Support</h3>
+                                    <p>The team behind this is a dedicated one. All beneficiaries of the Google Africa Schorlaship Program.
+                                    <br><br>They are working tirelessly to ensure this practice of offline-first is understood amongst themselves.</p>
+                                </div>
+
+                                <div class="toggle-content text-center" id="tab6">
+                                    <h3>Testimonials</h3>
+                                    <p>I am proud to say i have used the meal logger before and plan to use it often since it helps me a lot in my food choices, it is so intelligent of the team to bring forth this innovative experience.
+                                </div>
+                            </div> <!-- /.col-md-12 -->
+                        </div> <!-- /.row -->
+                    </div> <!-- /.services -->
+
+                    <div id="menu-3" class="gallery content">
+                        <div class="row">
+
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="images/gallery/g1.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="images/gallery/g1.jpg">
+                                        <span>+</span>
+                                    </a>
+                                </div> <!-- /.g-item -->
+                            </div> <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="images/gallery/g2.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="images/gallery/g2.jpg">
+                                        <span>+</span>
+                                    </a>
+                                </div> <!-- /.g-item -->
+                            </div> <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="images/gallery/g3.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="images/gallery/g3.jpg">
+                                        <span>+</span>
+                                    </a>
+                                </div> <!-- /.g-item -->
+                            </div> <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="images/gallery/g4.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="images/gallery/g4.jpg">
+                                        <span>+</span>
+                                    </a>
+                                </div> <!-- /.g-item -->
+                            </div> <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="images/gallery/g5.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="images/gallery/g5.jpg">
+                                        <span>+</span>
+                                    </a>
+                                </div> <!-- /.g-item -->
+                            </div> <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="images/gallery/g6.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="images/gallery/g6.jpg">
+                                        <span>+</span>
+                                    </a>
+                                </div> <!-- /.g-item -->
+                            </div> <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="images/gallery/g7.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="images/gallery/g7.jpg">
+                                        <span>+</span>
+                                    </a>
+                                </div> <!-- /.g-item -->
+                            </div> <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="images/gallery/g8.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="images/gallery/g8.jpg">
+                                        <span>+</span>
+                                    </a>
+                                </div> <!-- /.g-item -->
+                            </div> <!-- /.col-md-4 -->
+                            <div class="col-md-4 col-ms-6">
+                                <div class="g-item">
+                                    <img src="images/gallery/g9.jpg" alt="">
+                                    <a data-rel="lightbox" class="overlay" href="images/gallery/g9.jpg">
+                                        <span>+</span>
+                                    </a>
+                                </div> <!-- /.g-item -->
+                            </div> <!-- /.col-md-4 -->
+
+                        </div> <!-- /.row -->
+                    </div> <!-- /.gallery -->
+
+                    <div id="menu-4" class="contact content">
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="toggle-content text-center spacing">
+                                    <h3>Contact Us</h3>
+                                    <p>Ummh, find us on slack mws-group-7</p>
+                                </div>
+                            </div> <!-- /.col-md-12 -->
+
+                            <div class="col-md-12">
+                                <div class="google-map">
+                                </div> <!-- /.google-map -->
+                            </div> <!-- /.col-md-12 -->
+
+                            <div class="col-md-12">
+                                <div class="contact-form">
+                                    <div class="row">
+                                    	<form action="#" method="post">
+                                            <fieldset class="col-md-4">
+                                                <input id="name" type="text" name="name" placeholder="Name">
+                                            </fieldset>
+                                            <fieldset class="col-md-4">
+                                                <input type="email" name="email" id="email" placeholder="Email">
+                                            </fieldset>
+                                            <fieldset class="col-md-4">
+                                                <input type="text" name="subject" id="subject" placeholder="Subject">
+                                            </fieldset>
+                                            <fieldset class="col-md-12">
+                                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                            </fieldset>
+                                            <fieldset class="col-md-12">
+                                                <input type="submit" name="send" value="Send Message" id="submit" class="button">
+                                            </fieldset>
+                                        </form>
+                                    </div> <!-- /.row -->
+                                </div> <!-- /.contact-form -->
+                            </div> <!-- /.col-md-12 -->
+                        </div> <!-- /.row -->
+                    </div> <!-- /.contact -->
+
+                </div> <!-- /#menu-container -->
+
+            </div> <!-- /.col-md-8 -->
+
+        </div> <!-- /.row -->
+    </div> <!-- /.container-fluid -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 footer">
+                <p id="footer-text">
+
+                	Copyright &copy; 2018 <a href="#">Meal Logging App</a>
+
+                 </p>
+            </div><!-- /.footer -->
+        </div>
+    </div> <!-- /.container-fluid -->
+
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/jquery.easing-1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+
+			jQuery(function ($) {
+
+                $.supersized({
+
+                    // Functionality
+                    slide_interval: 6000, // Length between transitions
+                    transition: 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                    transition_speed: 900, // Speed of transition
+
+                    // Components
+                    slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                    slides: [ // Slideshow Images
+                        {
+                            image: 'images/delicious.jpg'
+                        }, {
+                            image: 'images/sweet.jpg'
+                        }, {
+                            image: 'images/potamus.jpg'
+                        }, {
+                            image: 'images/wow.jpg'
+                        }
+                    ]
+
+                });
+            });
+
+    </script>
+
+    	<!-- Google Map -->
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+        <!-- Google Map Init-->
+        <script type="text/javascript">
+           function templatemo_map() {
+                $('.google-map').gmap3({
+                    marker:{
+                        address: '16.8496189,96.1288854'
+                    },
+                        map:{
+                        options:{
+                        zoom: 15,
+                        scrollwheel: false,
+                        streetViewControl : true
+                        }
+                    }
+                });
+            }
+        </script>
+</body>
+</html>
